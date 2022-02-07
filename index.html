@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Block Explorer</title>
+        <script type="module" src="index.js"></script>
+    </head>
+    <body>
+        <h1>Block Explorer</h1>
+        <div class="components">
+            <div>
+                <h2> Lookup Block Information</h2>
+                <input type="text" id="block-no" placeholder="Block no" />
+                <div class="button" id="get-block-no">
+                  Get Block Content
+                </div>
+                <div class="button" id="get-latest-block">
+                    Get Latest Block Content
+                </div>
+            </div>  
+            <div>
+                <h2>Select Network</h2>
+                <div>
+                    <select name="network" id="my-network">
+                        <option value="mainnet">Mainnet</option>
+                        <option value="Rinkeby">Rinkeby</option>
+                        <option value="Ropsten">Ropsten</option>
+                    </select>
+                </div>
+            </div>      
+        </div>
+        <div class="components">
+            <div>
+                <h2>Lookup Account</h2>
+                <input type="text" id="account-no" placeholder="Account" />
+                <div class="button" id="get-ac-details">
+                  Get ac balance
+                </div>
+            </div>
+            <div>
+                <h2>Lookup Transaction</h2>
+                <input type="text" id="txn-hash" placeholder="Txn" />
+                <div class="button" id="get-txn-details">
+                  Get TXN Details
+                </div>
+            </div>    
+        </div>
+        <div class="results">
+            <div>
+                <h2>Results</h2>
+                <div id="block-content">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
