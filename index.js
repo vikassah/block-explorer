@@ -100,7 +100,7 @@ document.getElementById("get-ac-details").addEventListener('click', () => {
     console.log(`${server}/address/${network}/${address}`);
 
     let content = "";
-    if(address.length === 0) {
+    if(address.length === 0 || !utils.isAddress(address)) {
         document.getElementById('block-content').innerHTML = "<p class='error'>please enter a valid account no.</p>";
         return;
     }
