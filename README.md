@@ -10,5 +10,6 @@ Functionalities:
 
 
 > parcel index.html
+
 > node server/index.js
 > 
